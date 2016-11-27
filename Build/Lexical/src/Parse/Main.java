@@ -7,22 +7,22 @@ import java.rmi.server.ExportException;
 public class Main {
 
   public static void main(String argv[]) throws java.io.IOException {
-      String filename_root ="/home/emile/Documents/Github/TigerCompiler/TestCase/More/Bad/";
+      String filename_root ="/home/emile/Documents/Github/TigerCompiler/TestCase/More/Good/";
       String filename;
-      for(int i=1;i<90;++i) {
+      for(int i=17;i<18;++i) {
           try {
               filename = filename_root + i + ".tig";
               ErrorMsg.ErrorMsg errorMsg = new ErrorMsg.ErrorMsg(filename);
               java.io.InputStream inp = new java.io.FileInputStream(filename);
               //if file exist output file
-              System.out.println("\n"+ i + ".tig:");
+              System.out.println("\n"+ i + ".tig:\n");
               System.out.flush();
               Lexer lexer = new Yylex(inp, errorMsg);
               java_cup.runtime.Symbol tok;
 
               do {
                   tok = lexer.nextToken();
-                  System.out.println(symnames[tok.sym] + " " + tok.left);
+                  System.out.print(symnames[tok.sym] + " " + tok.left+"\t");
               } while (tok.sym != sym.EOF);
 
               inp.close();
