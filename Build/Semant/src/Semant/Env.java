@@ -1,10 +1,3 @@
-/*
- * @(#)Env.java	1.0 2011/01/09
- * Package: Semant
- * Copyright 2011 Kiki Tiger Compiler, Inc. All rights reserved.
- * @author ÕÅÐù  5080309672 SJTU
- */
-
 package Semant;
 
 import Symbol.Table;
@@ -12,11 +5,7 @@ import Symbol.Symbol;
 import Types.RECORD;
 import Types.Type;
 
-/**
- * The environment of semantic analysis
- * 
- * @author Kiki
- */
+
 class Env {
 	
 	/**
@@ -33,21 +22,15 @@ class Env {
 	 * Error Message
 	 */
 	ErrorMsg.ErrorMsg errorMsg;
-	
-	/**
-	 * Root Level
-	 */
-	Translate.Level rootLevel;
-	
+
+
 	/**
 	 * Constructor
 	 * 
 	 * @param err
-	 * @param level
 	 */
-	Env(ErrorMsg.ErrorMsg err, Translate.Level level) {
+	Env(ErrorMsg.ErrorMsg err) {
 		errorMsg = err;
-		rootLevel = level;
 		//initialize venv and tenv with predefined identifiers.
 		InitVenv();
 		InitTenv();
@@ -66,7 +49,7 @@ class Env {
 	 * initialize venv with predefined identifiers.
 	 */
 	private void InitVenv() {
-		
+
 		venv = new Table();
 		Symbol name;
 		Types.RECORD formals;
@@ -144,9 +127,7 @@ class Env {
 	 * @param result
 	 */
 	private void SystemFunction(Symbol name, RECORD formals, Type result) {
-		Translate.Level level = new Translate.Level(rootLevel, name, null);
-		Temp.Label label = new Temp.Label(name);
-		FunEntry func = new FunEntry(level, label, formals, result);
+		FunEntry func = new FunEntry(formals, result);
 		venv.put(name, func);
 	}
 
