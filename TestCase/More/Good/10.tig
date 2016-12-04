@@ -2,6 +2,7 @@
 let
 	var x:int := 0
 in
+
 	/*an empty let does not return a value */
 end
 

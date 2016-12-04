@@ -22,7 +22,7 @@ public class Main {
 
               do {
                   tok = lexer.nextToken();
-                  System.out.print(symnames[tok.sym] + " " + tok.left+"\t");
+                  System.out.print(symnames[tok.sym] + " " + tok.left+"\n");
               } while (tok.sym != sym.EOF);
 
               inp.close();

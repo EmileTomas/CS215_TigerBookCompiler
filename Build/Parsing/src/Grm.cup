@@ -77,13 +77,13 @@ parser code {:
 /* Terminals (tokens returned by the scanner). */
 terminal String ID, STRING;
 terminal Integer INT;
-terminal COMMA, COLON, SEMICOLON, LPAREN, RPAREN,
-	LBRACK, RBRACK, LBRACE, RBRACE, DOT, PLUS, MINUS,
-	TIMES, DIVIDE, EQ, NEQ, LT, LE, GT, GE, AND, OR,
-	ASSIGN, ARRAY, IF, THEN, ELSE, WHILE, FOR, TO, DO,
-	LET, IN, END, OF, BREAK, NIL, FUNCTION, VAR, TYPE,
+terminal COMMA, COLON, SEMICOLON, LPAREN, RPAREN, 
+	LBRACK, RBRACK, LBRACE, RBRACE, DOT, PLUS, MINUS, 
+	TIMES, DIVIDE, EQ, NEQ, LT, LE, GT, GE, AND, OR, 
+	ASSIGN, ARRAY, IF, THEN, ELSE, WHILE, FOR, TO, DO, 
+	LET, IN, END, OF, BREAK, NIL, FUNCTION, VAR, TYPE, 
 	UMINUS;
-
+	
 /* Non terminals */
 non terminal Exp program, expr, empty;
 non terminal Var lvalue;
@@ -121,7 +121,7 @@ expr ::=	INT:i {: RESULT = new IntExp(ileft,i); :}
 		|	STRING:s {: RESULT = new StringExp(sleft,s); :}
 		|	NIL:n {: RESULT = new NilExp(nleft); :}
 		|	lvalue:l {: RESULT = new VarExp(lleft,l);:}
-		|	MINUS:m expr:e {: RESULT = new OpExp(mleft, new IntExp(e.pos, 0), OpExp.MINUS, e); :}%prec UMINUS
+		|	MINUS:m expr:e {: RESULT = new OpExp(mleft, new IntExp(e.pos, 0), OpExp.MINUS, e); :}%prec UMINUS 
 		|	expr:e1 PLUS:p expr:e2 {: RESULT = new OpExp(pleft, e1, OpExp.PLUS, e2); :}
 		|	expr:e1 MINUS:m expr:e2 {: RESULT = new OpExp(mleft, e1, OpExp.MINUS, e2); :}
 		|	expr:e1 TIMES:t expr:e2 {: RESULT = new OpExp(tleft, e1, OpExp.MUL, e2); :}

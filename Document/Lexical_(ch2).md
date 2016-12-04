@@ -30,10 +30,32 @@ clean:
 
 ### 实验步骤
 
-1. 阅读`Tiger Language Reference Mannual.pdf` 文件了解`Tiger Language`的语法结构,主要阅读**Identifiers, Comments, Interger literal,String literal**
-2. 结合`MCIJ_chapt02c.pdf`文件中`PROGRAM`部分的要求填充`Tiger.lex`文件.
-3. 在项目目录下使用`make`指令生成相关文件(主要为了生成`Yylex.java`文件).或者在`bash`中输入 `java jflex.Main`使用`Jflex`的GUI命令生成`Yylex.java`.![img](file:///home/emile/Documents/Github/TigerCompiler/Document/Resource/1.jpg?lastModify=1480255054)
-4. 使用`Intellij Idea`创建相关项目,按照pdf中`PROGRAM`部分导入相关文件,添加输入文件参数进行测试.
+1. 新建`Intellij IDEA`工程文件,并按照下列文件结构在`ProjectPath/src`文件夹下导入虎书框架`chap2`内容.
+
+   ```
+   .
+   ├── ErrorMsg
+   │   ├── ErrorMsg.class
+   │   ├── ErrorMsg.java
+   │   └── LineList.class
+   ├── java_cup
+   │   └── runtime
+   ├── Parse
+   │   ├── Lexer.java
+   │   ├── Main.java
+   │   ├── sym.java
+   │   ├── Tiger.lex
+   │   └── Yylex.java
+   └── makefile
+   ```
+
+2. 阅读`Tiger Language Reference Mannual.pdf` 文件了解`Tiger Language`的语法结构,主要阅读**Identifiers, Comments, Interger literal,String literal**
+
+3. 结合`MCIJ_chapt02c.pdf`文件中`PROGRAM`部分的要求填充`Tiger.lex`文件.
+
+4. 在项目目录下使用`make`指令生成相关文件(主要为了生成`Yylex.java`文件).或者在`bash`中输入 `java jflex.Main`使用`Jflex`的GUI命令生成`Yylex.java`.![img](file:///home/emile/Documents/Github/TigerCompiler/Document/Resource/1.jpg?lastModify=1480255054)
+
+5. 使用`Intellij Idea`创建相关项目,按照pdf中`PROGRAM`部分导入相关文件,添加输入文件参数进行测试.
 
 ### 实验结果
 
@@ -82,4 +104,4 @@ LET 11	TYPE 17	ID 22	EQ 24	ARRAY 26	OF 32	ID 35	VAR 41	ID 45	COLON 49	ID 50	ASSI
 
 ### 实验总结
 
-​	在lex文件编写过程中,通过测试主要遇到的问题在于多重嵌套评论的问题,需要使用\<state\>语法才能解决,其余主要的时间还是在于`Jflex`语法的熟悉以及文档的阅读上.
+在lex文件编写过程中,通过测试主要遇到的问题在于多重嵌套评论的问题,需要使用\<state\>语法才能解决,其余主要的时间还是在于`Jflex`语法的熟悉以及文档的阅读上.
