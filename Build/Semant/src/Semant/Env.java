@@ -63,60 +63,60 @@ class Env {
 		name = Symbol.symbol("print");
 		formals = new Types.RECORD(Symbol.symbol("s"), STRING, null);
 		result = VOID;
-		SystemFunction(name, formals, result);
+		AddSystemFunction(name, formals, result);
 		
 		name = Symbol.symbol("printi");
 		formals = new Types.RECORD(Symbol.symbol("i"), INT, null);
 		result = VOID;
-		SystemFunction(name, formals, result);	
+		AddSystemFunction(name, formals, result);
 		
 		name = Symbol.symbol("flush");
 		formals = null;
 		result = VOID;
-		SystemFunction(name, formals, result);
+		AddSystemFunction(name, formals, result);
 
 		name = Symbol.symbol("getchar");
 		formals = null;
 		result = STRING;
-		SystemFunction(name, formals, result);
+		AddSystemFunction(name, formals, result);
 		
 		name = Symbol.symbol("ord");
 		formals = new Types.RECORD(Symbol.symbol("s"), STRING, null);
 		result = INT;
-		SystemFunction(name, formals, result);
+		AddSystemFunction(name, formals, result);
 		
 		name = Symbol.symbol("chr");
 		formals = new Types.RECORD(Symbol.symbol("i"), INT, null);
 		result = STRING;
-		SystemFunction(name, formals, result);
+		AddSystemFunction(name, formals, result);
 		
 		name = Symbol.symbol("size");
 		formals = new Types.RECORD(Symbol.symbol("s"), STRING, null);
 		result = INT;
-		SystemFunction(name, formals, result);
+		AddSystemFunction(name, formals, result);
 		
 		name = Symbol.symbol("substring");
 		formals = new Types.RECORD(Symbol.symbol("s"), STRING, 
 				new Types.RECORD(Symbol.symbol("f"), INT,
 						new Types.RECORD(Symbol.symbol("n"),INT,null)));
 		result = STRING;
-		SystemFunction(name, formals, result);
+		AddSystemFunction(name, formals, result);
 		
 		name = Symbol.symbol("concat");
 		formals = new Types.RECORD(Symbol.symbol("s1"), STRING,
 				new Types.RECORD(Symbol.symbol("s2"), STRING, null));
 		result = STRING;
-		SystemFunction(name, formals, result);
+		AddSystemFunction(name, formals, result);
 		
 		name = Symbol.symbol("not");
 		formals = new Types.RECORD(Symbol.symbol("i"), INT, null);
 		result = INT;
-		SystemFunction(name, formals, result);
+		AddSystemFunction(name, formals, result);
 		
 		name = Symbol.symbol("exit");
 		formals = new Types.RECORD(Symbol.symbol("i"), INT, null);
 		result = VOID;
-		SystemFunction(name, formals, result);		
+		AddSystemFunction(name, formals, result);
 	}
 	
 	/**
@@ -126,7 +126,7 @@ class Env {
 	 * @param formals
 	 * @param result
 	 */
-	private void SystemFunction(Symbol name, RECORD formals, Type result) {
+	private void AddSystemFunction(Symbol name, RECORD formals, Type result) {
 		FunEntry func = new FunEntry(formals, result);
 		venv.put(name, func);
 	}

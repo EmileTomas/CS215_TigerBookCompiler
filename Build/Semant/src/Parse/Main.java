@@ -5,7 +5,7 @@ import Semant.Semant;
 import java.awt.*;
 
 public class Main {
-    final static String FilePath="/home/emile/Documents/Github/TigerCompiler/TestCase/More/Bad/4.tig";
+    final static String FilePath="/home/emile/Documents/Github/TigerCompiler/TestCase/More/Bad/3.tig";
 
     public static void main(String argv[])  {
         Parse parser=new Parse(FilePath);

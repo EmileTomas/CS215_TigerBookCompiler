@@ -8,6 +8,12 @@
 
 本实验主要使用`CUP`完成语法分析,重点在于`Grm.cup`文件的编写,需要仔细阅读`Tiger Language Reference Mannual.pdf`,对于`Expression`部分中每一个生成式进行在`Grm.cup`中完成相应的编写.
 
+框架提供的`Absyn Package` 主要用于`Grm.cup`文件中用于生成相应的抽象语法.
+
+`Absyn Package` 类派生关系:
+
+![Selection_002](Resource/Selection_002.jpg)
+
 ## 实验步骤
 
 1. 新建`Intellij IDEA`工程文件,并按照下列文件结构整合虎书框架`chap3`以及`chap4`目录
@@ -34,7 +40,7 @@
 
 5. 在`Parse.java`文件中导入并使用`Print.java`打印抽象语法结果.
 
-## Grm.cup文件的更改
+## 实验细节
 
 ### 如何翻译
 
@@ -90,7 +96,7 @@ start with program;
 program ::=  expr:e {: parser.parseResult = (Exp)e; :}
 ```
 
-## 输出抽象语法
+### 输出抽象语法
 
 ```java
 import Absyn.Print;

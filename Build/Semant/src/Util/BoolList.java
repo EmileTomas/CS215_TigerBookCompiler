@@ -1,17 +1,5 @@
-/*
- * @(#)BoolList.java	1.0 2011/01/09
- * Package: Util
- * Copyright 2011 Kiki Tiger Compiler, Inc. All rights reserved.
- * @author уепЫ  5080309672 SJTU
- */
-
 package Util;
 
-/**
- * A boolean list
- * 
- * @author Kiki
- */
 public class BoolList {
 	
 	/**

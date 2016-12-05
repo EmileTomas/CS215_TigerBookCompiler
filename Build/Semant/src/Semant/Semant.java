@@ -540,7 +540,6 @@ public class Semant {
 	 * @param d Absyn.VarDec
 	 * @return Translate.Exp
 	 */
-	//todo
 	Translate.Exp transDec(Absyn.VarDec d) {
 		ExpTy etInit = transExp(d.init);
 		if (etInit.ty.actual().coerceTo(VOID)) {
