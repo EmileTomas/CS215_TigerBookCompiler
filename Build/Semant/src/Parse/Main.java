@@ -12,7 +12,7 @@ public class Main {
     public static void main(String argv[]) {
         String FilePath;
 
-        for (int i = 62; i < 63; ++i) {
+        for (int i = 15; i < 16; ++i) {
             try {
                 FilePath = PREFIX + i + ".tig";
                 Parse parser = new Parse(FilePath);

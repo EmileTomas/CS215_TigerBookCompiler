@@ -314,6 +314,9 @@ public class Semant {
 	ExpTy transExp(Absyn.AssignExp e) {
 		ExpTy etVar = transVar(e.var);
 		ExpTy etExp = transExp(e.exp);
+		if(etVar.ty.actual() instanceof Types.RECORD&&etExp.ty.actual() instanceof Types.NIL){
+			return new ExpTy(null, VOID);
+		}
 		if ( !etVar.ty.actual().coerceTo(etExp.ty.actual()) ) {
 			error(e.pos, "Unmatched Assign Types!");
 		}
@@ -587,6 +590,7 @@ public class Semant {
 			Types.NAME t = (Types.NAME) env.tenv.get(td.name);
 			t.bind(transTy(td.ty));
 		}
+
 		for (Absyn.TypeDec td = d; td != null; td = td.next) {
 			Types.NAME type = (Types.NAME) env.tenv.get(td.name);
 			if ( type.isLoop() ) {
