@@ -343,7 +343,6 @@ public class Semant {
 	 * @param e Absyn.ForExp
 	 * @return ExpTy
 	 */
-	//todo
 	ExpTy transExp(Absyn.ForExp e) {
 		++loopCount;
 		env.venv.beginScope();
@@ -371,7 +370,6 @@ public class Semant {
 	 * @param e Absyn.BreakExp
 	 * @return ExpTy
 	 */
-	//todo
 	ExpTy transExp(Absyn.BreakExp e) {
 		if(loopCount==0) {
 			error(e.pos, "BREAK must be in a LOOP!");
@@ -612,12 +610,12 @@ public class Semant {
 				error(fd.pos, "Redefined Function Name in a recursive declaration!");
 				return null;
 			}
-			result = (fd.result == null? VOID : transTy(fd.result).actual());
 			formals = transTypeFields(fd.params);
+			result = (fd.result == null? VOID : transTy(fd.result).actual());
 			env.venv.put(fd.name, new FunEntry(formals, result));
 		}
 		for(Absyn.FunctionDec fd = d; fd != null; fd = fd.next) {
-			FunEntry fun = (FunEntry) env.venv.get(fd.name);
+			FunEntry fun = (FunEntry) env.venv.get(fd.name);	//save it because params may cover it
 			env.venv.beginScope();
 			LinkedList<FieldList> stack = new LinkedList<FieldList>();
 			for ( FieldList field = fd.params; field != null; field = field.tail )
@@ -631,13 +629,14 @@ public class Semant {
 				VarEntry entry = new VarEntry(type);
 				env.venv.put(field.name, entry);
 			}
+
 			Semant newsem = new Semant(env);
 			ExpTy et = newsem.transExp(fd.body);
 			if (fd.result == null && !et.ty.actual().coerceTo(VOID)) {
 				error(fd.pos, "Procedure Returns No Value!");
 				return null;
 			}
-			else if (!et.ty.actual().coerceTo(((FunEntry)env.venv.get(fd.name)).result.actual())) {
+			else if (!et.ty.actual().coerceTo(fun.result.actual())) {
 				error(fd.result.pos, "Unmatched Return Type!");
 				return null;
 			}

@@ -3,18 +3,28 @@ package Parse;
 import Semant.Semant;
 
 import java.awt.*;
+import java.io.FileNotFoundException;
 
 public class Main {
-    final static String FilePath="/home/emile/Documents/Github/TigerCompiler/TestCase/More/Bad/3.tig";
 
-    public static void main(String argv[])  {
-        Parse parser=new Parse(FilePath);
-        Absyn.Exp absyn=parser.getAbsyn();
+    static final String PREFIX = "/home/emile/Documents/Github/TigerCompiler/TestCase/More/Bad/";
 
-        Semant semant=new Semant(parser.errorMsg);
-        System.out.print("\n\n\n");
-        System.out.println("Semant Test:");
-        semant.transProg(absyn);
+    public static void main(String argv[]) {
+        String FilePath;
+
+        for (int i = 62; i < 63; ++i) {
+            try {
+                FilePath = PREFIX + i + ".tig";
+                Parse parser = new Parse(FilePath);
+                Absyn.Exp absyn = parser.getAbsyn();
+
+                Semant semant = new Semant(parser.errorMsg);
+                System.out.println("File " + i + " :");
+                semant.transProg(absyn);
+            } catch (Error e) {
+            //do nothing
+            }
+        }
     }
 
 }

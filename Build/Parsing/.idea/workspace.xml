@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Grm.cup" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Grm.cup" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Grm.cup">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3366">
+            <state relative-caret-position="874">
               <caret line="153" column="17" selection-start-line="153" selection-start-column="17" selection-end-line="153" selection-end-column="17" />
               <folding />
             </state>
@@ -48,180 +48,6 @@
             <state relative-caret-position="44">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/Absyn" pinned="false" current-in-tab="true">
-        <entry file="uml://JAVA/Absyn">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>Absyn</OriginalElement>
-              <nodes>
-                <node x="504.0" y="780.0">Absyn.OpExp</node>
-                <node x="649.0" y="384.0">Absyn.Dec</node>
-                <node x="628.0" y="619.0">Absyn.IntExp</node>
-                <node x="214.0" y="779.0">Absyn.SeqExp</node>
-                <node x="395.0" y="581.0">Absyn.ArrayExp</node>
-                <node x="768.0" y="510.0">Absyn.VarDec</node>
-                <node x="632.0" y="790.0">Absyn.BreakExp</node>
-                <node x="0.0" y="1001.0">Absyn.ExpList</node>
-                <node x="410.0" y="0.0">Absyn.RecordTy</node>
-                <node x="45.0" y="535.0">Absyn.SimpleVar</node>
-                <node x="539.0" y="698.0">Absyn.VarExp</node>
-                <node x="709.0" y="202.0">Absyn.FunctionDec</node>
-                <node x="346.0" y="741.0">Absyn.LetExp</node>
-                <node x="209.0" y="395.0">Absyn.Var</node>
-                <node x="557.0" y="85.0">Absyn.ArrayTy</node>
-                <node x="324.0" y="918.0">Absyn.AssignExp</node>
-                <node x="234.0" y="662.0">Absyn.NilExp</node>
-                <node x="305.0" y="496.0">Absyn.IfExp</node>
-                <node x="436.0" y="191.0">Absyn.Ty</node>
-                <node x="70.0" y="220.0">Absyn.SubscriptVar</node>
-                <node x="134.0" y="1001.0">Absyn.Print</node>
-                <node x="233.0" y="583.0">Absyn.WhileExp</node>
-                <node x="0.0" y="373.0">Absyn.FieldVar</node>
-                <node x="435.0" y="662.0">Absyn.Exp</node>
-                <node x="419.0" y="398.0">Absyn.Absyn</node>
-                <node x="528.0" y="278.0">Absyn.FieldList</node>
-                <node x="823.0" y="358.0">Absyn.TypeDec</node>
-                <node x="491.0" y="915.0">Absyn.RecordExp</node>
-                <node x="441.0" y="502.0">Absyn.StringExp</node>
-                <node x="264.0" y="82.0">Absyn.NameTy</node>
-                <node x="970.0" y="0.0">Absyn.DecList</node>
-                <node x="372.0" y="820.0">Absyn.CallExp</node>
-                <node x="591.0" y="526.0">Absyn.ForExp</node>
-                <node x="270.0" y="274.0">Absyn.FieldExpList</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="Absyn.VarDec" target="Absyn.Dec">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.ForExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.AssignExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.WhileExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.ArrayExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.RecordExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.FieldVar" target="Absyn.Var">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.Exp" target="Absyn.Absyn">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.RecordTy" target="Absyn.Ty">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.OpExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.NilExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.SubscriptVar" target="Absyn.Var">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.StringExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.SeqExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.FieldExpList" target="Absyn.Absyn">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.Dec" target="Absyn.Absyn">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.FieldList" target="Absyn.Absyn">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.CallExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.Var" target="Absyn.Absyn">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.TypeDec" target="Absyn.Dec">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.BreakExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.VarExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.LetExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.FunctionDec" target="Absyn.Dec">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.NameTy" target="Absyn.Ty">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.IfExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.SimpleVar" target="Absyn.Var">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.IntExp" target="Absyn.Exp">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.Ty" target="Absyn.Absyn">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Absyn.ArrayTy" target="Absyn.Ty">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.7933774834437084" x="981.7846410684476" y="553.5233722871454" />
-              <SelectedNodes />
-              <Categories />
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -262,9 +88,13 @@
             <state relative-caret-position="220">
               <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#27927#27928#0" expanded="true" />
-                <element signature="e#27964#27965#0" expanded="true" />
+                <element signature="e#0#98801#0" expanded="false" />
+                <element signature="e#25014#25015#0" expanded="false" />
+                <element signature="e#25066#25067#0" expanded="false" />
+                <element signature="e#27654#27655#0" expanded="false" />
+                <element signature="e#27695#27696#0" expanded="false" />
+                <element signature="e#28047#28048#0" expanded="false" />
+                <element signature="e#28077#28078#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -275,7 +105,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="19" column="31" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="31" />
-              <folding />
+              <folding>
+                <element signature="e#88#89#0" expanded="false" />
+                <element signature="e#104#105#0" expanded="false" />
+                <element signature="e#206#207#0" expanded="false" />
+                <element signature="e#224#225#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -285,7 +120,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
               <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-              <folding />
+              <folding>
+                <element signature="e#553#554#0" expanded="false" />
+                <element signature="e#586#587#0" expanded="false" />
+                <element signature="e#625#626#0" expanded="false" />
+                <element signature="e#655#656#0" expanded="false" />
+                <element signature="e#685#686#0" expanded="false" />
+                <element signature="e#706#707#0" expanded="false" />
+                <element signature="e#2313#2314#0" expanded="false" />
+                <element signature="e#2344#2345#0" expanded="false" />
+                <element signature="e#3829#3830#0" expanded="false" />
+                <element signature="e#3867#3868#0" expanded="false" />
+                <element signature="e#4357#4358#0" expanded="false" />
+                <element signature="e#4402#4403#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -349,9 +197,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -444,6 +291,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -930,15 +778,16 @@
       <workItem from="1480814799986" duration="445000" />
       <workItem from="1480826646068" duration="12087000" />
       <workItem from="1480901499201" duration="415000" />
+      <workItem from="1481028771896" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38564000" />
+    <option name="totallyTimeSpent" value="39164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1077" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -951,7 +800,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17205422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17185822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1000,7 +849,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#553#554#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#625#626#0" expanded="false" />
+            <element signature="e#655#656#0" expanded="false" />
+            <element signature="e#685#686#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
+            <element signature="e#2313#2314#0" expanded="false" />
+            <element signature="e#2344#2345#0" expanded="false" />
+            <element signature="e#3829#3830#0" expanded="false" />
+            <element signature="e#3867#3868#0" expanded="false" />
+            <element signature="e#4357#4358#0" expanded="false" />
+            <element signature="e#4402#4403#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1056,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1067,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="157" column="14" selection-start-line="157" selection-start-column="14" selection-end-line="157" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,7 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1091,7 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1099,7 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1281,7 +1138,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,7 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1313,7 +1167,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="35" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,10 +1202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding>
-            <element signature="e#186#187#0" expanded="false" />
-            <element signature="e#219#220#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1360,7 +1209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="35" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1368,7 +1216,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="e#553#554#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#625#626#0" expanded="false" />
+            <element signature="e#655#656#0" expanded="false" />
+            <element signature="e#685#686#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
+            <element signature="e#2313#2314#0" expanded="false" />
+            <element signature="e#2344#2345#0" expanded="false" />
+            <element signature="e#3829#3830#0" expanded="false" />
+            <element signature="e#3867#3868#0" expanded="false" />
+            <element signature="e#4357#4358#0" expanded="false" />
+            <element signature="e#4402#4403#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1377,9 +1238,13 @@
         <state relative-caret-position="220">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#27927#27928#0" expanded="true" />
-            <element signature="e#27964#27965#0" expanded="true" />
+            <element signature="e#0#98801#0" expanded="false" />
+            <element signature="e#25014#25015#0" expanded="false" />
+            <element signature="e#25066#25067#0" expanded="false" />
+            <element signature="e#27654#27655#0" expanded="false" />
+            <element signature="e#27695#27696#0" expanded="false" />
+            <element signature="e#28047#28048#0" expanded="false" />
+            <element signature="e#28077#28078#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1388,7 +1253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1428,13 +1292,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="e#88#89#0" expanded="false" />
+            <element signature="e#104#105#0" expanded="false" />
+            <element signature="e#206#207#0" expanded="false" />
+            <element signature="e#224#225#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Grm.cup">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3366">
+        <state relative-caret-position="874">
           <caret line="153" column="17" selection-start-line="153" selection-start-column="17" selection-end-line="153" selection-end-column="17" />
           <folding />
         </state>
@@ -1612,7 +1481,7 @@
               <point x="0.0" y="0.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.7933774834437084" x="981.7846410684476" y="553.5233722871454" />
+          <settings layout="Hierarchic Group" zoom="0.7933774834437084" x="982.0" y="554.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>

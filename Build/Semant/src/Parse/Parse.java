@@ -31,7 +31,6 @@ public class Parse {
                 }
             }
             absyn = parser.parseResult;
-            System.out.println("Abstract Tree:");
             new Print(System.out).prExp(absyn, 0);
         }
     }
